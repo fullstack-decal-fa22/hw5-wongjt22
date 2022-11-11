@@ -18,7 +18,7 @@ const Feed = () => {
 
   useEffect(() => {
     getPostsData();
-  }, [])
+  }, [data])
 
   // ====================
 
@@ -30,11 +30,11 @@ const Feed = () => {
         )
       }
 
-      <NewPost func={getPostsData} />
+      <NewPost setData={setData} />
     </div>
   )
 
 }
 
 
-export default Feed;
+export default Feed; 

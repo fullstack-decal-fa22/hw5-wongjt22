@@ -13,7 +13,11 @@ const NewPost = ({ props }) => {
       body
     })
 
-    axios.post(props.func, onSubmit).then((response) => console.log(response));
+    axios.post('http://localhost:3002/post', {
+      id,
+      title,
+      body
+    }).then((response) => console.log(response));
   }
 
   return <div>
