@@ -30,7 +30,7 @@ const Feed = () => {
         )
       }
 
-      <NewPost setData={setData} />
+      <NewPost setData={getPostsData} />
     </div>
   )
 

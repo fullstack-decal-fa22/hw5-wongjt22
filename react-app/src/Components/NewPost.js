@@ -17,7 +17,7 @@ const NewPost = ({ props }) => {
       id,
       title,
       body
-    }).then((response) => console.log(response));
+    }).then(props.setData);
   }
 
   return <div>
